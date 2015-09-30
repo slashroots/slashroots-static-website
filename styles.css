@@ -42,6 +42,7 @@ body {
     float: right;
     margin-top: 2%;
     margin-right: 3%;
+    display: none;
 }
 #menu ul {
     list-style-type: none;
@@ -62,7 +63,7 @@ body {
     position: relative;
     width: 100%;
     padding-bottom: 45%;
-    background-image: url(images/farmer.jpg);
+    /*background-image: url(images/farmer.jpg);*/
     background-size: cover;    
 }
 #hero > div {
@@ -88,34 +89,90 @@ body {
     position: relative;
     background: #ffffff;
     width: 95%;
-    height: 1000px;
     margin-top: -80px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px;
 }
 #content_title {
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     font-size: 20pt;
     color: #458e9e;
-    width: 75%;
+    width: 96%;
     margin-top: -30px;
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
     margin-bottom: 0px;
     float: left;
     clear: both;
+}
+.content_subtitle {
+    font-family: 'Roboto Slab', serif;
+    font-weight: 500;
+    font-size: 15pt;
+    margin-bottom: -10px;
+    color: #3c3c3c;
 }
 #content_text {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 11pt;
     color: #3c3c3c;
-    width: 75%;
+    width: 96%;
     height: auto;
     margin-top: 5px;
-    margin-left: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
     float: left;
-}    
+}
+#content_text > p, #content_text > ol, #content_text > ul{
+    width: 75%;
+}
+
+p > a {
+    color: #458e9e;
+}
+.written_by {
+    width: 23%;
+    height: 150px;
+    background-image: url(images/matthew.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    float: right; 
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.written_by_caption {
+    position: absolute;
+    height: 50px;
+    bottom: 0; 
+    left: 0; 
+    right: 0;
+    background-color: rgba(0,0,0,0.4);
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2%;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 1.6vmax;
+    text-shadow: 1px 1px #000000;
+    line-height: 110%;
+}
+.content_image {
+    width: 560px;
+    height: 315px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    float:right;
+    
+}
+
+#content_image_1 {
+
+}
 /*----------------------------------------------------*/
 
 /*----------------------- Grid -----------------------*/
@@ -143,6 +200,9 @@ body {
 #group_1 > .colx2 {
     width: 66%;
     float: right;
+}
+#group_2{
+    display: none;
 }
 #group_2 > .colx1 {
     width: 32%;
@@ -191,7 +251,7 @@ body {
     background-size: cover;
 }
 #box2 {
-    background-image: url(images/agrihack.jpg);
+    background-image: url(images/devca.jpg);    
     background-size: cover
 }
 #box3 {
@@ -199,7 +259,7 @@ body {
     background-size: cover;
 }
 #box4 {
-    background-image: url(images/devca.jpg);
+    background-image: url(images/agrihack.jpg);    
     background-size: cover;
 }
 #box5 {
@@ -252,11 +312,11 @@ body {
 
 /*-------------------- News Boxes --------------------*/
 #news_box1 {
-    background-image: url(images/matthew.jpg);
+    background-image: url(images/caribbean-tide.jpg);
     background-size: cover;
 }
 #news_box2 {
-    background-image: url(images/david.jpg);
+    background-image: url(images/africa_open_data.jpg);
     background-size: cover;                
 }
 #news_box3 {
@@ -352,9 +412,15 @@ body {
 #content > .label_idea {
     width: 40px;
 }
+#content > .label_initative {
+    width: 60px;
+}
+.label_written_by{
+    width: 55px
+}
 /*----------------------------------------------------*/            
 
-/*----------------------- Labels ---------------------*/
+/*----------------------- Footer ---------------------*/
 #footer {
     width: 100%;
     height: 250px;
@@ -425,9 +491,8 @@ body {
     width: 4.75%; 
 }            
 #content > .label_idea {
-    width: 50px;
-    height: 5px;
-    background: #ffffff;
+    width: 40px;
+    height: 15px;
 }
 /*----------------------------------------------------*/                           
 }
@@ -595,9 +660,8 @@ body {
     width: 4.75%; 
 }            
 #content > .label_idea {
-    width: 50px;
-    height: 5px;
-    background: #ffffff;
+    width: 40px;
+    height: 15px;
 }
 /*----------------------------------------------------*/                           
     
