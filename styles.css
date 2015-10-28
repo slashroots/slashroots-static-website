@@ -64,12 +64,12 @@ body {
     width: 100%;
     padding-bottom: 45%;
     /*background-image: url(images/farmer.jpg);*/
-    background-size: cover;    
+    background-size: cover;
 }
 #hero > div {
-    position: absolute;  
-    bottom: 0; 
-    left: 0; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
     right: 0;
     top: 80%;
     background-color: rgba(0,0,0,0.4);
@@ -80,9 +80,9 @@ body {
     font-weight: 700;
     font-size: 1.6vmax;
     text-shadow: 1px 1px #000000;
-    line-height: 110%;                
+    line-height: 110%;
 }
-/*----------------------------------------------------*/            
+/*----------------------------------------------------*/
 
 /*---------------------- Content ---------------------*/
 #content {
@@ -140,15 +140,15 @@ p > a {
     background-size: cover;
     background-position: center;
     position: relative;
-    float: right; 
+    float: right;
     padding-left: 0px;
     padding-right: 0px;
 }
 .written_by_caption {
     position: absolute;
     height: 50px;
-    bottom: 0; 
-    left: 0; 
+    bottom: 0;
+    left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.4);
     color: #ffffff;
@@ -167,7 +167,7 @@ p > a {
     margin-left: 20px;
     margin-bottom: 10px;
     float:right;
-    
+
 }
 
 #content_image_1 {
@@ -208,7 +208,7 @@ p > a {
     width: 32%;
     height: auto;
     float: right;
-}           
+}
 #group_2 > .colx2 {
     width: 66%;
     float: left;
@@ -243,7 +243,7 @@ p > a {
     border-color: #898989;
     bottom: 0px;
 }
-/*----------------------------------------------------*/            
+/*----------------------------------------------------*/
 
 /*----------------------- Boxes ----------------------*/
 #box1 {
@@ -251,7 +251,7 @@ p > a {
     background-size: cover;
 }
 #box2 {
-    background-image: url(images/devca.jpg);    
+    background-image: url(images/devca.jpg);
     background-size: cover
 }
 #box3 {
@@ -259,35 +259,35 @@ p > a {
     background-size: cover;
 }
 #box4 {
-    background-image: url(images/agrihack.jpg);    
+    background-image: url(images/agrihack.jpg);
     background-size: cover;
 }
 #box5 {
     background-image: url(images/data-driven.jpg);
     background-size: cover;
-}            
+}
 #box6 {
     background-image: url(images/data-driven.jpg);
     background-size: cover;
 }
 .small_box {
     /* background: green; */
-    width: 100%; 
-    padding-bottom: 80%; 
+    width: 100%;
+    padding-bottom: 80%;
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
 }
 .large_box {
     /* background: green; */
-    width: 100%; 
-    padding-bottom: 80%; 
+    width: 100%;
+    padding-bottom: 80%;
     position: relative;
 }
 .small_box > div, .large_box > div{
-    position: absolute;  
-    bottom: 0; 
-    left: 0; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
     right: 0;
     background-color: rgba(0,0,0,0.4);
     color: #ffffff;
@@ -316,8 +316,8 @@ p > a {
     background-size: cover;
 }
 #news_box2 {
-    background-image: url(images/africa_open_data.jpg);
-    background-size: cover;                
+    background-image: url(images/ogpsummit.jpg);
+    background-size: cover;
 }
 #news_box3 {
     background-image: url(images/ben.jpg);
@@ -337,7 +337,7 @@ p > a {
     margin-bottom: 5%;
 }
 .news_text_box {
-    width: 100%; 
+    width: 100%;
     padding-bottom: 0;
     position: relative;
     padding-left: 0px;
@@ -349,11 +349,11 @@ p > a {
     font-size: 11pt;
     margin: 5%;
 }
-/*----------------------------------------------------*/            
+/*----------------------------------------------------*/
 
 /*----------------------- Labels ---------------------*/
 .label {
-    height:15px; 
+    height:15px;
     margin-top:-4.25%;
     margin-bottom: 2.25%;
     padding-left: 5px;
@@ -369,10 +369,10 @@ p > a {
 #hero > div > .label {
     margin-top:-1%;
     margin-bottom: .75%;
-    line-height: normal;                
+    line-height: normal;
 }
 .label_idea {
-    width: 37px; 
+    width: 37px;
 }
 .label_initiative {
     width: 55px;
@@ -382,17 +382,17 @@ p > a {
 }
 .label_event {
     width: 38px;
-} 
+}
 .large_box > div > .label {
     margin-top: -3.2%;
     margin-bottom: 1%;
 }
 .large_box > div >.label_idea {
-    width: 4.75%; 
-}            
+    width: 4.75%;
+}
 #content > .label {
     background: #ffffff;
-    height:15px; 
+    height:15px;
     margin-top:-4.25%;
     position: relative;
     margin-bottom: 2.25%;
@@ -418,7 +418,7 @@ p > a {
 .label_written_by{
     width: 55px
 }
-/*----------------------------------------------------*/            
+/*----------------------------------------------------*/
 
 /*----------------------- Footer ---------------------*/
 #footer {
@@ -440,25 +440,25 @@ p > a {
 /******************************************************/
 /************************ Tablet **********************/
 /******************************************************/
-@media only screen and (min-width: 768px) and (max-width: 1024px),     
+@media only screen and (min-width: 768px) and (max-width: 1024px),
 only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1),
 only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2)
 {
 body {
-    
+
 }
 #grid {
     width: 100%;
 }
 .small_box > div, .large_box > div{
     font-size: 1.3vmax;
-} 
+}
 #hero > div {
-    font-size: 1.3vmax;              
-}            
+    font-size: 1.3vmax;
+}
 /*----------------------- Labels ---------------------*/
 .label {
-    height:12px; 
+    height:12px;
     margin-top:-4.25%;
     margin-bottom: 2.25%;
     padding-left: 4px;
@@ -472,7 +472,7 @@ body {
     text-shadow: 0px 0px #000000;
 }
 .label_idea {
-    width: 29px; 
+    width: 29px;
 }
 .label_initiative {
     width: 44px;
@@ -482,29 +482,29 @@ body {
 }
 .label_event {
     width: 30px;
-} 
+}
 .large_box > div > .label {
     margin-top: -3.2%;
     margin-bottom: 1%;
 }
 .large_box > div >.label_idea {
-    width: 4.75%; 
-}            
+    width: 4.75%;
+}
 #content > .label_idea {
     width: 40px;
     height: 15px;
 }
-/*----------------------------------------------------*/                           
+/*----------------------------------------------------*/
 }
-/*------------------ General Tablet ------------------*/            
-@media only screen and (min-width: 768px) and (max-width: 1024px)  
+/*------------------ General Tablet ------------------*/
+@media only screen and (min-width: 768px) and (max-width: 1024px)
 {
 .small_box > div, .large_box > div{
     font-size: 2vmax;
-} 
+}
 #hero > div {
-    font-size: 2vmax;              
-}                
+    font-size: 2vmax;
+}
 }
 /******************************************************/
 /******************************************************/
@@ -517,21 +517,21 @@ body {
 /************************ Phone ***********************/
 /******************************************************/
 @media only screen and (min-width: 320px) and (max-width: 768px),
-/*---- Default -----*/ only screen and (min-device-width: 320px) and (max-device-width: 768px),    
+/*---- Default -----*/ only screen and (min-device-width: 320px) and (max-device-width: 768px),
 /*---- iPhone 4 ----*/ only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
 /*---- iPhone 5 ----*/ only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2),
-/*---- iPhone 6 ----*/ only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2), 
-/*---- iPhone 6+ ---*/ only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),                 
+/*---- iPhone 6 ----*/ only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+/*---- iPhone 6+ ---*/ only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),
 /*---- Nexus 4 -----*/ only screen and (min-device-width: 384px) and (max-device-width: 567px) and (-webkit-device-pixel-ratio: 2),
 /*---- Nexus 5 -----*/ only screen and (min-device-width: 360px) and (max-device-width: 567px) and (-webkit-device-pixel-ratio: 3),
 /*---- Galaxy S3 ---*/ only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 2),
 /*---- Galaxy S4 ---*/ only screen and (min-device-width: 320px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3),
 /*---- Galaxy S5 ---*/ only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3),
-/*---- Generic S ---*/ only screen and (min-device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 1)                   
+/*---- Generic S ---*/ only screen and (min-device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 1)
 {
 
     body {
-        
+
     }
 
 /*----------------------- Grid -----------------------*/
@@ -547,12 +547,12 @@ body {
 #group_1 > .colx2 {
     width: 49%;
     float: right;
-}                
+}
 #group_2 > .colx1 {
     width: 49%;
     height: auto;
     float: right;
-    margin-top: -41.1%;                  
+    margin-top: -41.1%;
 }
 #group_2 > .colx2 {
     margin-top: 0.66%;
@@ -591,21 +591,21 @@ body {
     bottom: 0px;
 }
 /*----------------------------------------------------*/
-    
+
 /*----------------------- Boxes ----------------------*/
 #group_3 > .colx3 > #news_box3{
-    width: 49%; 
+    width: 49%;
     float: left;
-    padding-bottom: 45%; 
+    padding-bottom: 45%;
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
 }
 .small_box > div, .large_box > div{
     font-size: 1.5vmax;
-} 
+}
 #hero > div {
-    font-size: 1.5vmax;              
+    font-size: 1.5vmax;
 }
 .news_text_box > div > p {
     font-family: 'Roboto', sans-serif;
@@ -624,10 +624,10 @@ body {
         padding-right: 4.5%;
 }
 /*----------------------------------------------------*/
-    
+
 /*----------------------- Labels ---------------------*/
 .label {
-    height:12px; 
+    height:12px;
     margin-top:-4.25%;
     margin-bottom: 2.25%;
     padding-left: 4px;
@@ -641,7 +641,7 @@ body {
     text-shadow: 0px 0px #000000;
 }
 .label_idea {
-    width: 29px; 
+    width: 29px;
 }
 .label_initiative {
     width: 44px;
@@ -651,21 +651,21 @@ body {
 }
 .label_event {
     width: 30px;
-} 
+}
 .large_box > div > .label {
     margin-top: -3.2%;
     margin-bottom: 1%;
 }
 .large_box > div >.label_idea {
-    width: 4.75%; 
-}            
+    width: 4.75%;
+}
 #content > .label_idea {
     width: 40px;
     height: 15px;
 }
-/*----------------------------------------------------*/                           
-    
-    
+/*----------------------------------------------------*/
+
+
 }
 /*---- Default Phone ---*/
 @media only screen and (min-width: 320px) and (max-width: 768px)
@@ -679,15 +679,15 @@ body {
 .small_box > div, .large_box > div{
     font-size: 2vmax;
     top: 55%;
-} 
+}
 #hero > div {
     font-size: 2vmax;
     top: 70%
-} 
+}
 #group_3 > .colx3 {
 padding-bottom: 0%;
-    overflow: hidden; 
-    padding-bottom: 0%; 
+    overflow: hidden;
+    padding-bottom: 0%;
     position: relative;
     padding-left: 0px;
     padding-right: 0px;
@@ -696,9 +696,9 @@ padding-bottom: 0%;
     width: 49%;
     height: 25%;
     float: right;
-    overflow: hidden;    
-}    
-}            
+    overflow: hidden;
+}
+}
 /******************************************************/
 /******************************************************/
 /******************************************************/
