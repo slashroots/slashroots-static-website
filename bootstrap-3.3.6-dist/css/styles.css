@@ -32,6 +32,9 @@
     .box-8col {
         height: 616.656px;
     }
+    .box-news-text {
+        height: 330px;
+    }
 }
 @media (min-width:1200px) {
     .box-4col {
@@ -47,12 +50,26 @@
 .box-4 {background-image: url(../images/hackathon.jpg);}
 .box-5 {background-image: url(../images/data-driven.jpg);}
 .box-6 {background-image: url(../images/agrihack.jpg);}
-.box-news {border: solid 1px blue}
+.box-news {
+    border: solid 1px #8b8b8b;
+    overflow: hidden;
+}
 .box-news-item1 .box-news-photo {background-image: url(../images/ogpsummit.jpg);}
 .box-news-item2 .box-news-photo {background-image: url(../images/caribbean-tide.jpg);}
 .box-event-item .box-news-photo {background-image: url(../images/george.jpg);}
-.box-news-text{background: pink}
 .box-news-photo, .box-news-text {margin-top:0px; margin-bottom: 0px;}
+.box-news-text {
+    padding-top: 15px;
+    background: #ffffff;
+    color: #787878;
+}
+.box-news-text p {
+    font-family: 'Roboto';
+    font-weight: 100;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 @media (min-width: 768px) and (max-width: 991px) {
     .box-event-item {
         height: 347px;
@@ -88,6 +105,16 @@
     width: 140px;
     height: 60px;
     margin-top: 1%;
+    margin-left: 1%;
+}
+#logo-white {
+    background-image: url(../images/logo-white.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    width: 200px;
+    height: 80px;
+    margin-top: 20px;
     margin-left: 1%;
 }
 #menu {
@@ -184,4 +211,9 @@
     margin-top: 10px;
     margin-left: 15px;
     margin-bottom: 20px;
+}
+#footer {
+    background-color: #898989;
+    height: 200px;
+    margin-top: 50px;
 }
