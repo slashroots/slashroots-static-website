@@ -1,0 +1,187 @@
+
+.no-padding {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*---------------------- Box Model ---------------------*/
+
+.box, .box-news {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+@media (max-width:767px) {
+    .box {
+        width: 90vw;
+        height: 90vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width:768px) and (max-width:991px) {
+    .box-4col, .box-8col {
+        height: 345px;
+    }  
+}
+@media (min-width:992px) and (max-width:1199px) {
+    .box-4col {
+        height: 293.328px;
+    }
+    .box-8col {
+        height: 616.656px;
+    }
+}
+@media (min-width:1200px) {
+    .box-4col {
+        height: 360px;
+    }    
+        .box-8col {
+        height: 750px;
+    }
+}
+.box-1 {background-image: url(../images/post_its.jpg);}
+.box-2 {background-image: url(../images/devca.jpg);}
+.box-3 {background-image: url(../images/cftc.jpg);}
+.box-4 {background-image: url(../images/hackathon.jpg);}
+.box-5 {background-image: url(../images/data-driven.jpg);}
+.box-6 {background-image: url(../images/agrihack.jpg);}
+.box-news {border: solid 1px blue}
+.box-news-item1 .box-news-photo {background-image: url(../images/ogpsummit.jpg);}
+.box-news-item2 .box-news-photo {background-image: url(../images/caribbean-tide.jpg);}
+.box-event-item .box-news-photo {background-image: url(../images/george.jpg);}
+.box-news-text{background: pink}
+.box-news-photo, .box-news-text {margin-top:0px; margin-bottom: 0px;}
+@media (min-width: 768px) and (max-width: 991px) {
+    .box-event-item {
+        height: 347px;
+    }
+    .box-event-item .box-news-photo{
+        float: left;
+        width: 345px;
+    }
+    .box-event-item .box-news-text{
+        float: left;
+        width: 373px;
+    }
+}
+@media (max-width: 767px) {
+    .box-news-photo, .box-news-text {
+        float: none;
+    }    
+}
+
+/*------------------ End of Box Model ------------------*/
+
+.navbar {
+    background: #ffffff; 
+    height: 60px; 
+    width:100%; 
+}
+
+.navbar #logo {
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: left;
+    width: 140px;
+    height: 60px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+#menu {
+    width: 70%;
+    float: right;
+    margin-top: 18px;
+    margin-right: 3%;
+    display: inline-block;
+}
+#menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#menu ul li {
+    display: inline;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.35vmax;
+    font-weight: 300;
+    float: right;
+    margin-left: 5%;
+}
+#hero {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 45%;
+    background-image: url(../images/caribbean_tide_hero.jpg);
+    background-size: cover;
+}
+#hero-caption-wrapper {
+    background-color: rgba(0,0,0,0.4);
+    width:100%; 
+    min-height: 30vh;
+    position:absolute; 
+    bottom:0px;
+/*    margin-top: 70vh; */
+}
+#hero .box-caption {
+    min-height: 30vh;
+}
+.box .box-caption {
+    background-color: rgba(0,0,0,0.4);
+    width:100%; 
+    min-height: 125px;
+    position:absolute; 
+    bottom:0px;
+}
+.box-caption .label {
+    margin-top: -10px;
+    margin-left: 15px;
+    color: #000000;
+    background: #ffffff;
+    padding: 5px; 
+    display: inline-block;
+    font-size: 10px;
+    font-family: sans-serif;
+    font-weight: 100;
+    float: left;
+    clear: both;
+}
+#hero .box-caption-headline {
+    font-family: 'Roboto Slab';
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.box .box-caption-headline {
+    font-family: 'Roboto Slab';
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.box-caption-text {
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 300;
+    color: #ffffff;
+    display: inline-block;
+    float: left;
+    clear: both;
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 20px;
+}
