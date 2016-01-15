@@ -37,20 +37,20 @@ body {
     left: 1%;
     display: inline-block;
 }
-#menu {
-    width: 70%;
-    float: right;
-    margin-top: 2%;
+/*
+#sr-menu {
+    margin-top: 5%;
     margin-right: 3%;
-    display: inline-block;
+    background: red;
 }
-#menu ul {
+
+#sr-menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
-#menu ul li {
+#sr-menu ul li {
     display: inline;
     font-family: 'Roboto', sans-serif;
     font-size: 1.35vmax;
@@ -58,7 +58,7 @@ body {
     float: right;
     margin-left: 5%;
 
-}
+}*/
 #hero {
     position: relative;
     width: 100%;
