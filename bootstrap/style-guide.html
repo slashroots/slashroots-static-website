@@ -11,9 +11,11 @@
 
 		<script src="js/jquery-1.11.3.min.js"></script>
         <script src="js/bootstrap.js"></script>
+		<script src="js/prism.js"></script>
 
         <!-- Design CSS -->
         <link type="text/css" rel="stylesheet" href="css/styles.css">
+		<link href="css/prism.css" rel="stylesheet" />
 
         <!-- Fonts -->
         <link href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet" type="text/css">
@@ -25,20 +27,170 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
-
+<style type="text/css">
+	#style-guide #top-bar{
+		height:80px; border-bottom: 1px solid; position:fixed; z-index: 3000
+	}
+	#style-guide #left-col{
+		float:left;
+		border-right:1px solid;
+		height: 100%;
+		width:20%;
+		position: fixed;
+/*		margin-top: 80px;*/
+	}
+	#style-guide #right-col{
+		width:80%;
+		float: right;
+/*		margin-top: 80px;*/
+	}
+	#style-guide #top-bar-nav {
+		display: none;
+	}
+	@media(max-width:767px){
+		#style-guide #left-col {
+			width: 100%;
+			height: 80px;
+			float: left;
+			clear: both;
+			margin-top: 0px;
+		}
+		#style-guide #right-col{
+			 width:100%;
+		}
+		#style-guide #top-bar {
+			float: left;
+			clear: both;
+			background: red;
+			height: 80px;
+		}
+		#style-guide #top-bar-nav {
+			display: block;
+			width: 100%;
+		}
+		#top-nav-desktop-logo {
+			display: none;
+		}
+	}
+	#style-guide #header-iframe{
+		display:block; 
+		margin-right:auto; 
+		margin-left: auto; 
+		width:95%; 
+		height:95%; 
+		border: solid 1px #dddddd
+	}
+	
+</style>
 
 
         
     </head>
-	<body>
+	<body id="style-guide">
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12" style="height:80px"></div>
+				<div id="top-bar" class="hidden-xs col-sm-12 col-md-12 col-lg-12 dark-grey-outline white-background no-padding">
+					<img id="top-nav-desktop-logo" src="images/slashroots-logo-grey.png" height="50" style="margin:20px; float:left; clear:none">
+					<div class="title-1 medium-grey-text" style="clear:none; float:left; margin-top: 25px;">Website Style Guide</div>
+				</div>
 			</div>
-			<div class="row">
-				<div class="col-sm-2 col-md-2 col-lg-2"></div>
-				<div class="col-sm-10 col-md-10 col-lg-10">
-					<iframe src="style-guide-header.html" style="width:98%; height:98%; border: solid 1px #dddddd"></iframe>
+			<div id="top" class="row"  style="margin-top:80px;">
+				<div id="cols" class="col-sm-12 col-md-12 col-lg-12 no-padding">
+					<div id="left-col" class="dark-grey-border">
+						<div class="sidebar-nav">
+						  <div class="navbar navbar-default" role="navigation">
+							<div class="navbar-header">
+							  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							  </button>
+							  <span class="visible-xs navbar-brand title-2">Website Style Guide</span>
+							</div>
+							<div class="navbar-collapse collapse sidebar-navbar-collapse">
+								<ul class="nav navbar-nav">
+									<li class="active"><a href="#style-guide">Getting Started</a></li>
+								  	<li><a href="#structure">Structure</a></li>
+							      	<li><a href="#elements">Elements</a></li>
+<!--
+									<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown">Elements <b class="caret"></b></a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Header</a></li>
+											<li><a href="#">Footer</a></li>
+											<li><a href="#">Boxes</a></li>
+											<li class="divider"></li>
+											<li class="dropdown-header">Nav header</li>
+											<li><a href="#">Separated link</a></li>
+											<li><a href="#">One more separated link</a></li>
+										</ul>
+									</li>
+-->
+							  </ul>
+							</div><!--/.nav-collapse -->
+						  </div>
+						</div>		
+					</div>
+					<div id="right-col">
+						<div id="getting-started"></div>
+						<div class="title-1" style="margin:20px">
+							Getting Started
+						</div>
+						<div style="margin:20px">
+							<p class="body-copy">
+								The purpose of this style guide is aid in the development and expansion of the SlashRoots website and
+								other related projects pages. 
+							</p>
+						</div>
+						<div id="structure"></div>
+						<div class="spacer-large"></div>
+						<div class="title-1" style="margin:20px">
+							Structure
+						</div>
+						<div id="elements"></div>
+						<div class="spacer-large"></div>
+						<div class="title-1" style="margin:20px">
+							Elements
+						</div>
+						<div class="title-2" style="margin:20px">
+							Header: Navbar and Carousel
+						</div>
+						<iframe id="header-iframe" src="style-guide-header.html"></iframe>
+						<div class="spacer-small"></div>
+						<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true" style="margin:20px;">
+						  <div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingTwo">
+							  <h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-header-html" aria-expanded="false" aria-controls="collapseTwo">
+								  HTML
+								</a>
+							  </h4>
+							</div>
+							<div id="collapse-header-html" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+							  <div class="panel-body">
+								<div style="margin:20px;">
+									<pre data-src="style-guide-header-embed.html"></pre>
+								</div>
+							  </div>
+							</div>
+						  </div>
+						  <div class="panel panel-default">
+							<div class="panel-heading" role="tab" id="headingThree">
+							  <h4 class="panel-title">
+								<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse-header-angularjs" aria-expanded="false" aria-controls="collapseThree">
+								  Angular JS
+								</a>
+							  </h4>
+							</div>
+							<div id="collapse-header-angularjs" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+							  <div class="panel-body">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							  </div>
+							</div>
+						  </div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
