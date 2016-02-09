@@ -23,106 +23,140 @@
           <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
-
-
-
-        
+        <link rel="stylesheet" href="css/animation.css"><!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]--> 
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-12">
-                    <nav class="navbar navbar-default navbar-fixed-top">
-                        <div class="container">
-                            <div class="row">
-                                <nav id="logo" class="navbar-left col-xs-4 col-sm-3 col-md-3 col-lg-3"></nav>
-                                <nav class="navbar-right col-xs-6 col-sm-6 col-md-4 col-lg-4" style="margin-top:10px;">
-                                    <ul class="navbar-right nav navbar-nav">
-                                        <li class="dropdown">
-                                            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
-                                                <span class="caret"></span>
-                                            </a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Page 1-1</a></li>
-                                                <li><a href="#">Page 1-2</a></li>
-                                                <li><a href="#">Page 1-3</a></li> 
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Page 2</a></li> 
-                                        <li><a href="#">Page 3</a></li> 
-                                    </ul>   
-                                </nav>
-                            </div>    
-                        </div>
-                    </nav>
-                </div>
-            </div>
-            <div class="row">
-                <div class="no-padding col-sm-12 col-md-12 col-lg-12">
-                    <!--------------------Hero-------------------->
-                    <!--<a href="open_data_public_service.html">-->
-                        <div id="hero" style="background-image: url(../images/caribbean_tide_hero.jpg);">
-                            <!--<div id="hero-caption-wrapper">
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="box-caption col-sm-12 col-md-12 col-lg-12">
-                                            <div class="label">
-                                                TESTING
-                                            </div>
-                                            <span class="box-caption-headline">
-                                                A Caribbean Open Data Public Service
-                                            </span>
-                                            <span class="box-caption-text">
-                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur felis enim, fringilla id porta eu, congue et purus. Mauris sodales, nibh nec maximus venenatis, magna augue feugiat tortor, vel egestas leo justo non diam. Cras ac eros molestie metus tempor accumsan.
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>-->
-                        </div>
-                    <!--</a>-->
-                    <!--------------------Hero-------------------->                    
-                </div>
-            </div>
-        </div>
+		<div id="header" class="container-fluid">
+			<div class="row">
+				<!-- NAVBAR -->
+				<div id="header-navbar" class="col-sm-12 col-md-12 col-lg-12">
+					<nav class="navbar navbar-fixed-top">                        
+						<div class="row on-grid-row">
+							<nav id="logo" class="navbar-left hidden-xs col-sm-3 col-md-3 col-lg-3"></nav>
+							<nav id="navbar-wrapper" class="navbar-right col-xs-12 col-sm-6 col-md-6 col-lg-6">
+								<div id="logo-mobile"></div>
+								<button type="button" class="navbar-toggle collapsed dark-grey-border box-border" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar dark-grey-background"></span>
+									<span class="icon-bar dark-grey-background"></span>
+									<span class="icon-bar dark-grey-background"></span>
+								</button>
+								<ul id="main-navbar" class="navbar-right nav navbar-nav collapse navbar-collapse">
+									<li class="dropdown">
+										<a class="dropdown-toggle dark-grey-text" data-toggle="dropdown" href="#">
+											Work
+											<span class="caret"></span>
+										</a>
+										<ul class="dropdown-menu">
+											<li><a href="#">Projects</a></li>
+											<li><a href="#">Initatives</a></li>
+											<li><a href="#">Community</a></li>
+											<li><a href="#">Our Process</a></li>
+										</ul>
+									</li>
+									<li><a class="dark-grey-text" href="#">Ideas</a></li> 
+									<li><a class="dark-grey-text" href="#">Team</a></li>
+									<li><a class="dark-grey-text" href="#">Contact</a></li>
+								</ul>
+							</nav>
+						</div>    
+					</nav>
+				</div>
+				<!-- END NAVBAR -->
+			</div>
+			<div class="row">
+				<!-- CAROUSEL -->
+				<header id="header-carousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+					<!-- Wrapper for Slides -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<a href="../open_data_public_service.html">
+								<div id="hero" class="col-sm-12 col-md-12 col-lg-12 no-padding" style="background-image: url('/images/caribbean_tide_hero.jpg'); padding-bottom: 0%;">
+									<!-- <div class="box-caption"> -->
+										<!--------------------Hero-------------------->
+<!--
+										<div class="row on-grid-row">
+											<div class="col-sm-5 col-md-5 col-lg-5 col-sm-offset-7 col-md-offset-7 col-lg-offset-7" style="margin-top:50px; display:block">
+												<img src="images/devca-logo.png" width="100%">
+											</div>
+										</div>
+-->
+										<!--------------------Hero-------------------->  
+									<!-- </div> -->
+								</div>
+							</a>
+						</div>
+					</div>
+				</header>
+				<!-- END CAROUSEL -->   
+			</div>
+		</div>			
         <div class="container">
             <div class="row">
                 <div class="article-body white-background col-sm-12 col-md-12 col-lg-12">
                     <div class="row">
-                        <div class="article no-padding col-sm-8 col-md-9 col-lg-9">
+                        <div class="article no-padding col-sm-12 col-md-12 col-lg-12">
                             <div class="label label-text-2 black-text">
                                 IDEAS
                             </div>
-                            <div class="title-1">A Caribbean Open Data Public Service</div> 
-                            <div class="sub-title-1">Nullam lacinia finibus leo, et commodo quam varius ac.</div>
-                            <div class="body-copy">
+							<div id="author" class="hidden-xs col-sm-4 col-md-3 col-lg-3">
+								<div class="box box-3col" style="background-image: url('images/matthew.jpg');">
+									<div class="box-caption">
+										<div class="label label-text-2 dark-grey-text">Written By</div>
+										<span class="box-caption-headline title-2 white-text">
+											Matthew McNaughton
+										</span>
+									</div>
+									<div class="view-profile"><a class="white-text label-text-1" href="">View Profile</a></div>
+								</div>
+							</div>
+							<div class="title-1">A Caribbean Open Data Public Service</div> 
+							<div class="body-copy">
+                           		<p class="sub-title-1">
+									Last month, I had the pleasure of traveling to Trinidad & Tobago to present at the inaugural Caribbean Technology Innovation & Digital Economy Conference, or Caribbean TIDE for short. The Conference was organized by the Trinidadian government in collaboration with the World Bank, and brought together startups, civil society and public sector innovators from across the Caribbean with international practitioners to discuss innovation in the digital economy and progress being made by the Caribbean to benefit.
+                               	</p>                                	
+								<div class="title-2">A Growing Caribbean Open Data Community</div>
                                 <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin non erat sagittis, hendrerit lectus ac, blandit nunc. Phasellus aliquet erat felis, in cursus justo laoreet ac. Donec dapibus fermentum lectus sit amet sodales. Maecenas ac arcu aliquam, dictum sem vitae, pellentesque ex. Duis lacus nisi, pretium vitae nibh ac, fringilla vestibulum tortor. Integer sit amet neque justo. Aliquam molestie mollis nulla ac gravida. Nunc ornare dui sapien, id rhoncus libero consectetur sed. In hac habitasse platea dictumst. Fusce vitae eros vestibulum, feugiat erat gravida, pharetra neque. Maecenas justo quam, faucibus nec euismod eu, blandit sit amet erat. Curabitur massa sem, finibus nec ipsum ut, blandit aliquet magna. In hac habitasse platea dictumst.
+									While academia and civil society in the Caribbean have been long time supporters and advocates of Open Government Data in the Caribbean, at Caribbean TIDE it was great to see Governments leading the discussion. There were a number of panels with government representatives discussing the value of and plans for opening up data, including a regional panel of implementers discussing their current experiences and lessons learned.
+								</p>
+								<div class="inline-image">
+									<img src="images/tide-slide.png">
+									<p>caption</p>
+								</div>								 
+								<p>
+									In fact, the region now boasts official Government Open Data portals in the Dominican Republic, St. Lucia, Puerto Rico, and Trinidad & Tobago, with Jamaica's portal currently under development. These are complemented by the work of Statistical Institute Of Jamaica, the University of The West Indies, St Augustine Campus's open data and open GIS portals, and the Caribbean Open Institute Regional Open Data Portal. Although the portals may vary in maturity and breadth of data publication, this proliferation of open data publishers across the regions is indicative that open data is truly here in the Caribbean.
+								</p>
+								<p>
+									The conversation about the role of Open Data in the Caribbean has also evolved beyond simply publishing data. A workshop on Regional Technical Standards for Open Data data led by Jean Barroca and Andrew Stott, pointed the way for how the open data discourse was evolving and ways that reflected maturity and engagement around how open data could be further localized for the Caribbean context. After introducing CitySDK and CitadelOntheMove, data standard projects being implemented across European Cities to facilitate scale and replicability of innovations, participants discussed how similar work in the Caribbean could support the scaling innovations from one island to another.
+								</p>
+								<p>
+									Participants identified agriculture, tourism, and disaster response and preparedness as thematic sectors that would be strong first candidates for exploring data standardization that were relevant to the Caribbean context. This discussion is still early, but it is an exciting one. It complements the work we have been doing in the agriculture sector and we look forward to contributing to its progress.
+								</p>
+								<div class="title-2">Digital Services and a Citizen-Centric Public Sector</div>
+								<p>
+									The other take away from the conference that I was excited to see was an evolving narrative around the need for a different approach to the design and delivery of public services. After decades of low success rates for large IT project in both the public sector globally, with the Obama Administrations HealthCare.Gov launch being one of the most high profile missteps, IT in Government Service Delivery is experiencing a renaissance globally. A movement led by teams such as the UK Digital Services and the US Government's US Digital Services and 18f organizations, are seeking to bring more open, iterative and citizen-centred approaches into the core of government.
                                 </p>
-                                <p>
-                                    Proin dignissim velit a dui sagittis pharetra. Nullam lacinia finibus leo, et commodo quam varius ac. Aenean ullamcorper nisi sed ipsum mollis, vel mattis ipsum venenatis. Aliquam semper turpis ut scelerisque tincidunt. Nunc auctor velit sit amet odio mattis, at rutrum nisi fringilla. Vestibulum risus mauris, volutpat quis sem ac, cursus accumsan tellus. In et rhoncus nulla. Nam porttitor quam rhoncus lorem laoreet tristique ut in sapien. Cras et porttitor orci, sed vehicula dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec lectus sed quam hendrerit imperdiet. In nec suscipit elit. Etiam feugiat aliquam aliquam. Phasellus quis ornare metus. Integer ut urna tellus. Etiam fermentum posuere velit a egestas.
-                                </p>
-                                <p>
-                                    Sed malesuada metus eu erat sagittis, congue aliquet libero condimentum. Aenean porta sodales maximus. Aenean nec nisl non massa venenatis cursus. Etiam justo diam, sagittis dictum odio vel, efficitur sollicitudin eros. Donec pellentesque sem urna, sed blandit dui lobortis gravida. Vestibulum aliquet vestibulum lacus ut pellentesque. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Praesent consectetur scelerisque nunc, id pharetra lacus aliquam sit amet. Etiam vitae quam maximus, consectetur ex et, tempor lacus. Curabitur risus odio, congue nec sagittis in, eleifend hendrerit magna. Cras at maximus tortor, a ornare purus. Suspendisse ac neque placerat, posuere diam vel, viverra dui.
-                                </p>
-                                <p>
-                                    Morbi nunc sem, feugiat ut vehicula in, vehicula in dui. Quisque vel est quis erat sodales rutrum. Proin a eros et turpis scelerisque elementum at facilisis justo. Nulla ultrices sagittis ex. Ut molestie nulla nec cursus auctor. Duis eu finibus nisi. Maecenas bibendum sed tortor quis placerat. Nulla facilisi. Proin eros risus, suscipit sed erat id, egestas aliquam odio. Praesent mattis turpis arcu, nec maximus risus ullamcorper ut. Etiam et mauris in urna semper rutrum. Fusce imperdiet pellentesque est, eget posuere nisl cursus eu.
-                                </p>
-                                <p>
-                                    Maecenas rhoncus commodo quam eleifend pretium. Nam semper erat nec tortor pulvinar vulputate. Duis mi ligula, facilisis sed tortor eu, tristique suscipit elit. Maecenas nulla ligula, tempus at tincidunt vitae, feugiat in sem. Praesent porta purus sed erat semper, vel dapibus quam pellentesque. Etiam lobortis egestas enim, in ullamcorper enim volutpat eu. Cras quis massa at diam faucibus volutpat non eget dolor. Fusce metus orci, rhoncus a mi non, pellentesque congue mauris. Nullam eu erat vel felis pellentesque tristique.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="hidden-xs col-sm-4 col-md-3 col-lg-3">
-                            <div class="box box-3col" style="background-image: url('images/matthew.jpg');">
-                                <div class="box-caption">
-                                    <div class="label label-text-2 dark-grey-text">Written By</div>
-                                    <span class="box-caption-headline title-2 white-text">
-                                        Matthew McNaughton
-                                    </span>
+                                <div class="pull-quote">
+									<p>"Living guidelines on the best practices for creating technology-enabled programmes and services"</p> 	 	
                                 </div>
-                                <div class="view-profile"><a class="white-text label-text-1" href="">View Profile</a></div>
+                                <p>
+									I'm happy that the Caribbean is not being left behind in this trend. I was invited to TIDE to present on the Digital Development Principles, a collection of "living guidelines on the best practices for creating technology-enabled programmes and services. The principles are being adopted by organizations such as UNICEF, USAID and the Bill and Melinda Gates Foundation and include guidelines such as "designing with the user, "understanding the ecosystem, "being data-driven, all of which are aimed at combatting the abundance of failed projects within the ICT4D space. At SlashRoots, these principles are the core of how we do our work and have helped contribute to their development as well as used them to help our partners be more effective. I was very humbled and excited by the principles strong resonance among many at the conference as well as learning about other teams within government agencies who share the values.
+                                </p>
+								<p>
+									In fact, the work of two teams in particular stood out--Jose Luis Liranzo at the Presidential Office for Information Communication Technologies (OPTIC) in Dominican Republic, and Colleen Gallazzi and Amrika Ramjewan from the Ministry of Public Affairs' Diamond Division in Trinidad & Tobago.
+								</p>
+                           		<p>
+									I met Jose Luise in 2012 through his involvement in Dominican Republic's Open Government Initiative. At TIDE he presented on his team's progress with Open Data as well as on an initiative for driving improvements to the Dominican Government's Digital Services. In addition to a variety of eGovernment initiatives, they have created a framework for assessing public sector institutions on their digital and online government services. They publish the assessment online as a ranking of government services. Jose Luis shared that this ranking has helped accelerate engagement with his team and they are now working with many agencies to improve their use of technology with the citizen in mind.
+                           		</p>
+                           		<p>
+									Similarly in Trinidad, the Diamond Division team have created a "Diamond Standard Certification Programme "to improve to improve national competitiveness and ease of doing business through enhanced citizen-centric service delivery by Government Ministries, Departments and Agencies that provide services directly to the public. An initiative of the broader Public Sector Modernization effort, the Diamond Division team work alongside partner public sector entities to evaluate, streamline and monitor the service delivery experience for the citizenry. The agencies successful in completing the programme are assign the "Diamond Standard Certificate.
+                           		</p>
+                           		<p>
+									The most effective teams are seeking to be more open, iterative and more collaborative in the way they design their services. I'm happy that the Caribbean is not being left behind in this trend, and I look forward to more agencies adopting similar approaches in their own work.
+                           		</p>
+                           		<p>
+									Ultimately, the Caribbean TIDE Conference was a successful event and a great experience. The Caribbean still has a lot more work to do if we are to ensure that the experience of every citizen is one of dignity, effective and pleasurable experience. But the region has its champions, and we're glad to count ourselves among them.
+                           		</p>
                             </div>
                         </div>
                     </div>    
